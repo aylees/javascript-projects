@@ -54,7 +54,8 @@ function reverseArray (arry) {
     return reversed
 }
 console.log(reverseArray(arrayTest2))
-
+console.log(reverseArray(arrayTest1))
+console.log(reverseArray(arrayTest3))
 
 // Bonus Missions
 
