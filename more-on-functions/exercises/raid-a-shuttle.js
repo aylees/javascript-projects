@@ -38,6 +38,24 @@ console.log("Hold status: " + holdStatus(cargoHold));
 /* Next, liberate some of that glorious cargo.
  */
 
+let notSus= function(fuel) {
+  if (checkFuel(fuel) === 'green') {
+     return fuel - 100001;
+  }
+  else if (checkFuel(fuel) === 'yellow') {
+     return fuel - 50001;
+  }
+  else {
+     return fuel;
+  }
+};
+
+let stolenFuel = notSus(fuelLevel);
+console.log(stolenFuelFuel);
+
+//Need to go back and look at this again 
+
+
 //a). Define another anonymous function with an array as a parameter, and set it equal to another innocent variable.
 
 //b). You need to swipe two items from the cargo hold. Choose well. Stealing water ain’t gonna get us rich. Put the swag into a new array and return it from the function.
@@ -45,6 +63,14 @@ console.log("Hold status: " + holdStatus(cargoHold));
 //c). The cargo hold has better security than the fuel tanks. It counts how many things are in storage. You need to replace what you steal with something worthless. The count MUST stay the same, or you’ll get caught and thrown into the LaunchCode brig.
 
 //d). Don’t get hasty, matey! Remember to test your function.
+let theyWillNeverKnowCargo = function (array) {
+  let stolenCargo = [];
+  if (array.includes("gold") || array.includes("satellite")) {
+    stolenCargo.unshift("gold", "satellite");
+  } 
+  return
+}
+//
 
 /* Finally, you need to print a receipt for the accountant. Don’t laugh! That genius knows MATH and saves us more gold than you can imagine.
  */
@@ -53,4 +79,4 @@ console.log("Hold status: " + holdStatus(cargoHold));
 	
 //b). Call your anonymous fuel and cargo functions from within irs.
 
-//c). Use a template literal to return, "Raided _____ kg of fuel from the tanks, and stole ____ and ____ from the cargo hold."
+//c). Use a template literal to return, "Raided _____ kg of fuel from the tanks, and stole ____ and ____ from the cargo hold.

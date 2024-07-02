@@ -46,12 +46,12 @@ let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
 function reverseArray (arry) {
-    let reversed = []
+    let reversed = [];
     for (let i = 0; i<arry.length; i++) {
         reversed.push(reverseAnyCharacter(arry[i]))
         //console.log(reversed)
     }
-    return reversed
+    return reversed;
 }
 console.log(reverseArray(arrayTest2))
 console.log(reverseArray(arrayTest1))
